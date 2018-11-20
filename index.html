@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lineup Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/baseball.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="js/baseball.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <form action="">
+    </form>
+
+    <form>
+      <div class="row">
+        <div class="col-md">
+          <input type="text" class="form-control" name="playerName1" id="playerName1" placeholder="Player Name">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="fieldingRating1" id="fieldingRating1" placeholder="Fielding">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="throwingRating1" id="throwingRating1"placeholder="Throwing">
+        </div>
+        <div class="col-md">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="afraidOfBall1" value="afraidOfBall1">
+            <label class="form-check-label" for="afraidOfBall1">Fear</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="benchPriority1" value="benchPriority1">
+            <label class="form-check-label" for="benchPriority1">Bench</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="noShow1" value="noShow1">
+            <label class="form-check-label" for="noShow1">No Show</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- hide on screens wider than lg -->
+        <hr>
+      </div>
+      <!-- ******************************************************************** -->
+      <div class="row">
+        <div class="col-md">
+          <input type="text" class="form-control" name="playerName2" id="playerName2"placeholder="Player Name">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="fieldingRating2" id="fieldingRating2" placeholder="Fielding">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="throwingRating2" id="throwingRating2" placeholder="Throwing">
+        </div>
+        <div class="col-md">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="afraidOfBall2" value="afraidOfBall2">
+            <label class="form-check-label" for="afraidOfBall2">Fear</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="benchPriority2" value="benchPriority2">
+            <label class="form-check-label" for="benchPriority2">Bench</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="noShow2" value="noShow2">
+            <label class="form-check-label" for="noShow2">No Show</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- hide on screens wider than lg -->
+        <hr>
+      </div>
+      <!-- ******************************************************************** -->
+      <div class="row">
+        <div class="col-md">
+          <input type="text" class="form-control" name="playerName3" id="playerName3" placeholder="Player Name">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="fieldingRating3" id="fieldingRating3" placeholder="Fielding">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="throwingRating3" id="throwingRating3" placeholder="Throwing">
+        </div>
+        <div class="col-md">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="afraidOfBall3" value="afraidOfBall3">
+            <label class="form-check-label" for="afraidOfBall3">Fear</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="benchPriority3" value="benchPriority3">
+            <label class="form-check-label" for="benchPriority3">Bench</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="noShow3" value="noShow3">
+            <label class="form-check-label" for="noShow3">No Show</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- hide on screens wider than lg -->
+        <hr>
+      </div>
+      <!-- ******************************************************************** -->
+      <div class="row">
+        <div class="col-md">
+          <input type="text" class="form-control" name="playerName4" id="playerName4" placeholder="Player Name">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="fieldingRating4" id="fieldingRating4" placeholder="Fielding">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="throwingRating4" id="throwingRating4" placeholder="Throwing">
+        </div>
+        <div class="col-md">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="afraidOfBall4" value="afraidOfBall4">
+            <label class="form-check-label" for="afraidOfBall4">Fear</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="benchPriority4" value="benchPriority4">
+            <label class="form-check-label" for="benchPriority4">Bench</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="noShow4" value="noShow4">
+            <label class="form-check-label" for="noShow4">No Show</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- hide on screens wider than lg -->
+        <hr>
+      </div>
+      <!-- ******************************************************************** -->
+      <div class="row">
+        <div class="col-md">
+          <input type="text" class="form-control" name="playerName5" id="playerName5" placeholder="Player Name">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="fieldingRating5" id="fieldingRating5" placeholder="Fielding">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="throwingRating5" id="throwingRating5" placeholder="Throwing">
+        </div>
+        <div class="col-md">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="afraidOfBall5" value="afraidOfBall5">
+            <label class="form-check-label" for="afraidOfBall5">Fear</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="benchPriority5" value="benchPriority5">
+            <label class="form-check-label" for="benchPriority5">Bench</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="noShow5" value="noShow5">
+            <label class="form-check-label" for="noShow5">No Show</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- hide on screens wider than lg -->
+        <hr>
+      </div>
+      <!-- ******************************************************************** -->
+      <div class="row">
+        <div class="col-md">
+          <input type="text" class="form-control" name="playerName6" id="playerName6" placeholder="Player Name">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="fieldingRating6" id="fieldingRating6" placeholder="Fielding">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="throwingRating6" id="throwingRating6" placeholder="Throwing">
+        </div>
+        <div class="col-md">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="afraidOfBall6" value="afraidOfBall6">
+            <label class="form-check-label" for="afraidOfBall6">Fear</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="benchPriority6" value="benchPriority6">
+            <label class="form-check-label" for="benchPriority6">Bench</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="noShow6" value="noShow6">
+            <label class="form-check-label" for="noShow6">No Show</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- hide on screens wider than lg -->
+        <hr>
+      </div>
+      <!-- ******************************************************************** -->
+      <div class="row">
+        <div class="col-md">
+          <input type="text" class="form-control" name="playerName7" id="playerName7" placeholder="Player Name">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="fieldingRating7" id="fieldingRating7" placeholder="Fielding">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="throwingRating7" id="throwingRating7" placeholder="Throwing">
+        </div>
+        <div class="col-md">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="afraidOfBall7" value="afraidOfBall7">
+            <label class="form-check-label" for="afraidOfBall7">Fear</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="benchPriority7" value="benchPriority7">
+            <label class="form-check-label" for="benchPriority7">Bench</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="noShow7" value="noShow7">
+            <label class="form-check-label" for="noShow7">No Show</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- hide on screens wider than lg -->
+        <hr>
+      </div>
+      <!-- ******************************************************************** -->
+      <div class="row">
+        <div class="col-md">
+          <input type="text" class="form-control" name="playerName8" id="playerName8" placeholder="Player Name">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="fieldingRating8" id="fieldingRating8" placeholder="Fielding">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="throwingRating8" id="throwingRating8" placeholder="Throwing">
+        </div>
+        <div class="col-md">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="afraidOfBall8" value="afraidOfBall8">
+            <label class="form-check-label" for="afraidOfBall8">Fear</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="benchPriority8" value="benchPriority8">
+            <label class="form-check-label" for="benchPriority8">Bench</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="noShow8" value="noShow8">
+            <label class="form-check-label" for="noShow8">No Show</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- hide on screens wider than lg -->
+        <hr>
+      </div>
+      <!-- ******************************************************************** -->
+      <div class="row">
+        <div class="col-md">
+          <input type="text" class="form-control" name="playerName9" id="playerName9" placeholder="Player Name">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="fieldingRating9" id="fieldingRating9" placeholder="Fielding">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="throwingRating9" id="throwingRating9" placeholder="Throwing">
+        </div>
+        <div class="col-md">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="afraidOfBall9" value="afraidOfBall9">
+            <label class="form-check-label" for="afraidOfBall9">Fear</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="benchPriority9" value="benchPriority9">
+            <label class="form-check-label" for="benchPriority9">Bench</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="noShow9" value="noShow9">
+            <label class="form-check-label" for="noShow9">No Show</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- hide on screens wider than lg -->
+        <hr>
+      </div>
+      <!-- ******************************************************************** -->
+      <div class="row">
+        <div class="col-md">
+          <input type="text" class="form-control" name="playerName10" id="playerName10" placeholder="Player Name">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="fieldingRating10" id="fieldingRating10" placeholder="Fielding">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="throwingRating10" id="throwingRating10" placeholder="Throwing">
+        </div>
+        <div class="col-md">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="afraidOfBall10" value="afraidOfBall10">
+            <label class="form-check-label" for="afraidOfBall10">Fear</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="benchPriority10" value="benchPriority10">
+            <label class="form-check-label" for="benchPriority10">Bench</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="noShow10" value="noShow10">
+            <label class="form-check-label" for="noShow10">No Show</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- hide on screens wider than lg -->
+        <hr>
+      </div>
+      <!-- ******************************************************************** -->
+      <div class="row">
+        <div class="col-md">
+          <input type="text" class="form-control" name="playerName11" id="playerName11" placeholder="Player Name">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="fieldingRating11" id="fieldingRating11" placeholder="Fielding">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="throwingRating11" id="throwingRating11" placeholder="Throwing">
+        </div>
+        <div class="col-md">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="afraidOfBall11" value="afraidOfBall11">
+            <label class="form-check-label" for="afraidOfBall11">Fear</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="benchPriority11" value="benchPriority11">
+            <label class="form-check-label" for="benchPriority11">Bench</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="noShow11" value="noShow11">
+            <label class="form-check-label" for="noShow11">No Show</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- hide on screens wider than lg -->
+        <hr>
+      </div>
+      <!-- ******************************************************************** -->
+      <div class="row">
+        <div class="col-md">
+          <input type="text" class="form-control" name="playerName12" id="playerName12" placeholder="Player Name">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="fieldingRating12" id="fieldingRating12" placeholder="Fielding">
+        </div>
+        <div class="col-md-2">
+          <input type="text" class="form-control" name="throwingRating12" id="throwingRating12" placeholder="Throwing">
+        </div>
+        <div class="col-md">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="afraidOfBall12" value="afraidOfBall12">
+            <label class="form-check-label" for="afraidOfBall12">Fear</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="benchPriority12" value="benchPriority12">
+            <label class="form-check-label" for="benchPriority12">Bench</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="noShow12" value="noShow12">
+            <label class="form-check-label" for="noShow12">No Show</label>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- hide on screens wider than lg -->
+        <hr>
+      </div>
+      <!-- ******************************************************************** -->
+
+      <button type="button" class="btn btn-primary" onclick="process()">Generate Lineup</button>
+    </form>
+    <div class="row">
+      <div class="col-2">Player</div>
+      <div class="col-1">1</div>
+      <div class="col-1">2</div>
+      <div class="col-1">3</div>
+      <div class="col-1">4</div>
+      <div class="col-1">5</div>
+      <div class="col-1">6</div>
+    </div>
+    <div class="row">
+      <div class="col-2" id="player1name"></div>
+      <div class="col-1" id="player1inning1"></div>
+      <div class="col-1" id="player1inning2"></div>
+      <div class="col-1" id="player1inning3"></div>
+      <div class="col-1" id="player1inning4"></div>
+      <div class="col-1" id="player1inning5"></div>
+      <div class="col-1" id="player1inning6"></div>
+    </div>
+    <div class="row">
+      <div class="col-2" id="player2name"></div>
+      <div class="col-1" id="player2inning1"></div>
+      <div class="col-1" id="player2inning2"></div>
+      <div class="col-1" id="player2inning3"></div>
+      <div class="col-1" id="player2inning4"></div>
+      <div class="col-1" id="player2inning5"></div>
+      <div class="col-1" id="player2inning6"></div>
+    </div>
+    <div class="row">
+      <div class="col-2" id="player3name"></div>
+      <div class="col-1" id="player3inning1"></div>
+      <div class="col-1" id="player3inning2"></div>
+      <div class="col-1" id="player3inning3"></div>
+      <div class="col-1" id="player3inning4"></div>
+      <div class="col-1" id="player3inning5"></div>
+      <div class="col-1" id="player3inning6"></div>
+    </div>
+        <div class="row">
+          <div class="col-2" id="player4name"></div>
+          <div class="col-1" id="player4inning1"></div>
+          <div class="col-1" id="player4inning2"></div>
+          <div class="col-1" id="player4inning3"></div>
+          <div class="col-1" id="player4inning4"></div>
+          <div class="col-1" id="player4inning5"></div>
+          <div class="col-1" id="player4inning6"></div>
+        </div>
+    <div class="row">
+      <div class="col-2" id="player5name"></div>
+      <div class="col-1" id="player5inning1"></div>
+      <div class="col-1" id="player5inning2"></div>
+      <div class="col-1" id="player5inning3"></div>
+      <div class="col-1" id="player5inning4"></div>
+      <div class="col-1" id="player5inning5"></div>
+      <div class="col-1" id="player5inning6"></div>
+    </div>
+    <div class="row">
+      <div class="col-2" id="player6name"></div>
+      <div class="col-1" id="player6inning1"></div>
+      <div class="col-1" id="player6inning2"></div>
+      <div class="col-1" id="player6inning3"></div>
+      <div class="col-1" id="player6inning4"></div>
+      <div class="col-1" id="player6inning5"></div>
+      <div class="col-1" id="player6inning6"></div>
+    </div>
+    <div class="row">
+      <div class="col-2" id="player7name"></div>
+      <div class="col-1" id="player7inning1"></div>
+      <div class="col-1" id="player7inning2"></div>
+      <div class="col-1" id="player7inning3"></div>
+      <div class="col-1" id="player7inning4"></div>
+      <div class="col-1" id="player7inning5"></div>
+      <div class="col-1" id="player7inning6"></div>
+    </div>
+    <div class="row">
+      <div class="col-2" id="player8name"></div>
+      <div class="col-1" id="player8inning1"></div>
+      <div class="col-1" id="player8inning2"></div>
+      <div class="col-1" id="player8inning3"></div>
+      <div class="col-1" id="player8inning4"></div>
+      <div class="col-1" id="player8inning5"></div>
+      <div class="col-1" id="player8inning6"></div>
+    </div>
+    <div class="row">
+      <div class="col-2" id="player9name"></div>
+      <div class="col-1" id="player9inning1"></div>
+      <div class="col-1" id="player9inning2"></div>
+      <div class="col-1" id="player9inning3"></div>
+      <div class="col-1" id="player9inning4"></div>
+      <div class="col-1" id="player9inning5"></div>
+      <div class="col-1" id="player9inning6"></div>
+    </div>
+    <div class="row">
+      <div class="col-2" id="player10name"></div>
+      <div class="col-1" id="player10inning1"></div>
+      <div class="col-1" id="player10inning2"></div>
+      <div class="col-1" id="player10inning3"></div>
+      <div class="col-1" id="player10inning4"></div>
+      <div class="col-1" id="player10inning5"></div>
+      <div class="col-1" id="player10inning6"></div>
+    </div>
+    <div class="row">
+      <div class="col-2" id="player11name"></div>
+      <div class="col-1" id="player11inning1"></div>
+      <div class="col-1" id="player11inning2"></div>
+      <div class="col-1" id="player11inning3"></div>
+      <div class="col-1" id="player11inning4"></div>
+      <div class="col-1" id="player11inning5"></div>
+      <div class="col-1" id="player11inning6"></div>
+    </div>
+    <div class="row">
+      <div class="col-2" id="player12name"></div>
+      <div class="col-1" id="player12inning1"></div>
+      <div class="col-1" id="player12inning2"></div>
+      <div class="col-1" id="player12inning3"></div>
+      <div class="col-1" id="player12inning4"></div>
+      <div class="col-1" id="player12inning5"></div>
+      <div class="col-1" id="player12inning6"></div>
+    </div>
+  </div>
+</body>
+
+</html>

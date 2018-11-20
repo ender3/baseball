@@ -1,0 +1,9 @@
+.container-fluid {
+  margin: 10px 0;
+}
+.form-control {
+  margin-bottom: 10px;
+}
+.form-check-label {
+  font-size: .8rem;
+}
